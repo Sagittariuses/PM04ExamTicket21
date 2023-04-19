@@ -14,17 +14,17 @@ namespace UTValidation
         [Test]
         public void AuthorTest()
         {
-            Assert.AreEqual(true, func.AuthorValidate("Толстой Лев Николаевич"), "Bad Author");
+            Assert.That(func.AuthorValidate("Толстой Лев Николаевич"), Is.EqualTo(true), "Bad Author");
         }
         [Test]
         public void TitleTest()
         {
-            Assert.AreEqual(true, func.TitleValidate("Очень длинное название книги"), "Bad Title");
+            Assert.That(func.TitleValidate("Очень длинное название книги"), Is.EqualTo(true), "Bad Title");
         }
         [Test]
         public void yearTest()
         {
-            Assert.AreEqual(true, func.YearValidate("2058"), "Bad year");
+            Assert.That(func.YearValidate("2058"), Is.EqualTo(true), "Bad year");
         }
     }
 }
