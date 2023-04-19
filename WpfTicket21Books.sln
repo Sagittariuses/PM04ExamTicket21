@@ -5,6 +5,10 @@ VisualStudioVersion = 17.3.32922.545
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfTicket21Books", "WpfTicket21Books\WpfTicket21Books.csproj", "{1A5F18D4-27C1-42BD-8567-BED46D3576A0}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UnitTests", "UnitTests", "{924A5B4D-94F1-4F4C-9471-9572AA9C234B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UTValidation", "UTValidation\UTValidation.csproj", "{953BBE95-8D8C-4DFB-B8DA-7CF22B7E26AA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,9 +19,16 @@ Global
 		{1A5F18D4-27C1-42BD-8567-BED46D3576A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1A5F18D4-27C1-42BD-8567-BED46D3576A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1A5F18D4-27C1-42BD-8567-BED46D3576A0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{953BBE95-8D8C-4DFB-B8DA-7CF22B7E26AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{953BBE95-8D8C-4DFB-B8DA-7CF22B7E26AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{953BBE95-8D8C-4DFB-B8DA-7CF22B7E26AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{953BBE95-8D8C-4DFB-B8DA-7CF22B7E26AA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{953BBE95-8D8C-4DFB-B8DA-7CF22B7E26AA} = {924A5B4D-94F1-4F4C-9471-9572AA9C234B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E81A9169-AA28-49A4-AB55-149EE7B2CE5A}
