@@ -15,6 +15,16 @@
             <ColumnDefinition Width="407*"/>
         </Grid.ColumnDefinitions>
 
+        <StackPanel Orientation="Horizontal" Grid.ColumnSpan="2">
+            <Label Content="Автор кол-о символов: " Margin=" 10 0"/>
+            <Label x:Name="AuthorCount" Content="0"/>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Margin="0 30" Grid.ColumnSpan="2">
+            <Label Content="Название кол-во символов: " Margin=" 10 0"/>
+            <Label x:Name="TitleCount" Content="0"/>
+
+        </StackPanel>
+
 
         <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center" Height="150" Width="122">
             <Label Content="Автор" Margin="5" Height="40"/>
@@ -22,8 +32,10 @@
             <Label Content="Год издания" Margin="5" Height="40"/>
         </StackPanel>
 
-        <StackPanel Orientation="Vertical" Grid.Column="1">
-            <TextBox/>
+        <StackPanel Orientation="Vertical" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Width="230">
+            <TextBox x:Name="TbAutor" Height="40" Margin="5" PreviewTextInput="TbAutor_PreviewTextInput" TextChanged="TbAutor_TextChanged"/>
+            <TextBox x:Name="TbTitle" Height="40" Margin="5" PreviewTextInput="TbTitle_PreviewTextInput" TextChanged="TbTitle_TextChanged"/>
+            <TextBox x:Name="TbYearOfCreation" Height="40" Margin="5" PreviewTextInput="TbYearOfCreation_PreviewTextInput"/>
         </StackPanel>
 
         <StackPanel Orientation="Vertical" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" >
